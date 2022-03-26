@@ -216,7 +216,7 @@ p {
 
 .outline{
   -webkit-text-stroke: 1px rgb(3, 3, 3);
-  color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 
 @media screen and (max-width: 950px) {
