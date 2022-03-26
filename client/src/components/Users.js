@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import SpotifyPlayer from 'react-spotify-web-playback';
 import "regenerator-runtime/runtime.js";
 import "./Users.css";
 
@@ -47,7 +48,7 @@ function Users() {
     console.log(membersOnlyJson.map((obj) => obj.track.name))
     return (
         <div class="wrapper">
-        <h1>Member acitivty</h1>
+        <h1>Member Activity</h1>
             <div class="cols">
                 <div class="col">
                     {membersOnlyJson.map(obj =>
@@ -60,8 +61,17 @@ function Users() {
                             </div>
                             <div class="back" style={{ backgroundImage: `url(${obj.track.imageUrl.toString()})` }}>
                                 <div class="inner">
-                                    <p>{obj.track.name.toString()}</p>
+                                    <p>{obj.track.name.toString()} </p>
                                     <p>- {obj.track.artist.name.toString()}</p>
+                                        <a
+                                            className='social-icon-link spotify'
+                                            href={obj.track.uri.toString()}
+                                            target='_blank'
+                                            rel="noreferrer"
+                                            aria-label='Spotify'
+                                        >
+                                        <i className="fab outline fa-spotify"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>

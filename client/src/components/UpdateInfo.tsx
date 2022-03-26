@@ -11,7 +11,7 @@ function UpdateInfo() {
           />
           Your browser does not support the video tag.
         </video>
-        <h1>Latest News</h1>
+        <h1>Latest Details</h1>
         <div className="body">
             <div className="card card1 ">
                 <h2> Launch Date </h2>

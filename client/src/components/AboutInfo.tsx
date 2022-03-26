@@ -13,7 +13,7 @@ function AboutInfo() {
           />
           Your browser does not support the video tag.
         </video>
-        <h1>Collab Stats</h1>
+        <h1>Collab Info</h1>
         <div className="body">
             <div className="carousel_wrapper">
                 <div className="carousel">

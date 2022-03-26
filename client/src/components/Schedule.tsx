@@ -21,109 +21,102 @@ function Schedule() {
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            Add a song with x more/less seconds than the previous song
                             <div className="up-card">
                                 Week 2
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                +/- X secs
                             </div>
                         </div>
                     </li>
                     <li>
                     <div className="main-card">
-                        Each person gets 6 mins of total music they can add this week. 
-                        For example you can add one 6 min song or two 3 min songs
+                        Alternate between fast and slow tempo songs. If the last song added was upbeat, add a slow tempo song.
                         <div className="up-card">
                             Week 3
                         </div>
                         <div className="down-card">
-                            X Minutes of Music
+                            Fast / Slow
                         </div>
                     </div>
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            First person adds song with artist name that begins with A, next persons adds artist name thats starts with B, and so on
                             <div className="up-card">
                                 Week 4
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                Alphabet Order Artist
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            Add a song with a name that is a synonym of any word in the previous song title
                             <div className="up-card">
                                 Week 5
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                Synonyms
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            Add a song by a male artist if the previous song is by a female, and vice versa
                             <div className="up-card">
                                 Week 6
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                Alternate Male / Female
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            Choose song with album art that contains main color of last songs album art.
                             <div className="up-card">
                                 Week 7
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                Album Art
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            Add a song with a name that is an antonym of any word in the previous song title
                             <div className="up-card">
                                 Week 8
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                Antonyms
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            Add song beggining with same letter of beggining of the last word of previous song
+                            For example, if the previous song was called "Blue Monday", the next song would need to start with a Y.
                             <div className="up-card">
                                 Week 9
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                Last Letter = First Letter
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="main-card">
-                            Each person gets 6 mins of total music they can add this week. 
-                            For example you can add one 6 min song or two 3 min songs
+                            ??? ???? ?????? ???? ???? ?????? ?? ?????? ?? ??? ???? ?????? ?? ??????? ????
+                            ???? ??????, ???? ?? ?????? ???? ?? ?????? "?????? ??????", ?? ???? ???? ??? ?????? ?? ?????? ???? ?.
                             <div className="up-card">
                                 Week 10
                             </div>
                             <div className="down-card">
-                                X Minutes of Music
+                                ?
                             </div>
                         </div>
                     </li>

@@ -18,15 +18,13 @@ function HeroSection() {
         <div className='hero-btns'>
             <Button className='btns' type={undefined} onClick={undefined} buttonStyle='btn--outline' buttonSize='btn--large'>
                 <a 
-                href='https://open.spotify.com/playlist/6GrqUYo1UBg1TW7OoxCENX?si=78994f1aa6c34d62' 
+                href='https://open.spotify.com/playlist/6GrqUYo1UBg1TW7OoxCENX?si=c4a6ec622ca8483d&pt=8e6f9440e60c1314b17ef8fcd15c7926' 
                 target="_blank" 
                 rel="noreferrer">
                   Get Started
                 </a>
             </Button>
-            <Button className='btns' type={undefined} onClick={undefined} buttonStyle='btn--primary' buttonSize='btn--large'>
-                WATCH TRAILER <i className='far fa-play-circle' />
-            </Button>
+            
         </div>
     </div>
   )

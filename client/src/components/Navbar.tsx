@@ -42,7 +42,7 @@ function Navbar() {
         <div className='navbar-container'>
           <NavLink to='/' className='navbar-logo' onClick={closeMobileMenu}>
             COLLAB
-            <img src="/images/Collab-logos_white-notext.png" alt='logo' width='54px' height='44px' padding-left='5px'  />
+            <img className='navbar-logo-img' src="/images/Collab-logos_white-notext.png" alt='logo' width='54px' height='44px' padding-left='5px'  />
           </NavLink>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
