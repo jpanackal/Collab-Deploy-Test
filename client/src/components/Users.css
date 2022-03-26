@@ -241,7 +241,7 @@ p {
   }
   
   .col{
-    width: calc(75% - 2rem);
+    width: calc(85% - 2rem);
     margin: 1rem;
     cursor: pointer;
     

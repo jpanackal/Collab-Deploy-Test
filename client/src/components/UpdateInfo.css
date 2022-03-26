@@ -36,11 +36,14 @@ video {
   }
   
     @media screen and (max-width: 450px) {
-    .update-container > h1 {
-      font-size: 35px;
-      /* margin-top: -200px; */
-      padding-bottom: 30px;
-    }
+      .update-container > h1 {
+        font-size: 45px;
+        /* margin-top: -200px; */
+        padding-bottom: 30px;
+      }
+      .body {
+        width: 80%;
+      }
     }
 
   /* goofy cards */

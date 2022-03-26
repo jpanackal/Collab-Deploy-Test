@@ -14,7 +14,7 @@ function UpdateInfo() {
         <h1>Latest Details</h1>
         <div className="body">
             <div className="card card1 ">
-                <h2> Launch Date </h2>
+                <h2> Start Date </h2>
             </div>
             <div className="card card2 ">
                 <h2> Main Idea </h2>
