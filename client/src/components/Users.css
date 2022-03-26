@@ -216,28 +216,18 @@ p {
 
 .outline{
   -webkit-text-stroke: 1px rgb(3, 3, 3);
+  color: #fff;
 }
 
 @media screen and (max-width: 950px) {
   h1{
     padding-top: 50px;
-    font-size: 80px;
+    font-size: 70px;
     font-family: 'Montserrat';
     font-weight: bolder;
     color: #fff;
     text-align: center;
     /* margin: 2rem 0; */
-  }
-  .cols{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    
   }
   
   .col{

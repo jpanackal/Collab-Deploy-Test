@@ -9,7 +9,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 1999;
+  z-index: 3000;
 }
 
 .navbar.active {
@@ -36,6 +36,7 @@
   align-items: center;
   height: 80px;
   max-width: 1500px;
+  z-index: 3000;
 }
 
 .navbar-logo {
@@ -47,12 +48,14 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  z-index: 2999;
   
 }
 
 .navbar-logo-img {
   float: right; 
   padding-left: 10px;
+  z-index: 2999;
 }
 
 .nav-menu {
