@@ -61,7 +61,7 @@
 .main-card{
   color: white;
   width: 380px;
-  background-color: #121212;
+  background-color: #1212129d;
   height: 200px;
   position: relative;
   top: 50%;
@@ -80,7 +80,7 @@
 .up-card{
   width: 100%;
   height: 100px;
-  background-color: #191919;
+  background-color: #282a36;
   position: absolute;
   top: 0;
   display: flex;
@@ -95,7 +95,7 @@
 .down-card{
   width: 100%;
   height: 100px;
-  background-color: #191919;
+  background-color: #282a36;
   position: absolute;
   top: 100px;
   display: flex;
@@ -124,5 +124,13 @@
 @media screen and (max-width: 450px) {
   .main-card {
     width: 80%;
+  }
+  li:not(:last-child):after{
+    content:"";
+    display: block;
+    margin: 10px 0px 70px 0px;
+    border-bottom: 3px solid #282a36;
+    border-width: 10px;
+    width: 100%;
   }
 }
