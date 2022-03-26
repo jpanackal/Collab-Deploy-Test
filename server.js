@@ -1,7 +1,6 @@
 const express = require('express');
 const buddyList = require('spotify-buddylist')
 const app = express();
-const port = 5000;
 const path = require('path');
 const cors = require('cors');
 
@@ -43,5 +42,10 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-var port_number = server.listen(process.env.PORT || 5000);
-app.listen(port_number);
+
+const host = '0.0.0.0';
+const port = process.env.PORT || 5000;
+
+app.listen(port, host, function() {
+  console.log("Server started.......");
+});
