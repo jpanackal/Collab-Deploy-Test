@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import SpotifyPlayer from 'react-spotify-web-playback';
 import "regenerator-runtime/runtime.js";
 import "./Users.css";
 
