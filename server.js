@@ -19,7 +19,7 @@ async function displayCollabActivity(req ,res) {
   app.get("/api", displayCollabActivity);
 
 // ** MIDDLEWARE ** CHANGE THE THIRD ELEMENT IN THE AREA //
-const whitelist = ['http://localhost:3000', 'http://localhost:5000', 'https://shrouded-journey-38552.herokuapp.com']
+const whitelist = ['http://localhost:3000', 'http://localhost:5000', 'https://collab-site.herokuapp.com']
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin)
