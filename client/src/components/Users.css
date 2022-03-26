@@ -219,6 +219,15 @@ p {
 }
 
 @media screen and (max-width: 950px) {
+  h1{
+    padding-top: 50px;
+    font-size: 80px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    /* margin: 2rem 0; */
+  }
   .cols{
     display: -webkit-box;
     display: -ms-flexbox;

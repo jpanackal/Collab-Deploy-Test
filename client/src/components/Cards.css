@@ -28,7 +28,6 @@
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 60px;
-    font-size: 5.0vw;
     /* margin-top: -200px; */
     padding-bottom: 30px;
     text-shadow:
@@ -133,6 +132,16 @@
     font-weight: bold;
   }
   
+
+  @media screen and (max-width: 450px) {
+    .cards h1 { 
+      font-size: 35px;
+      /* margin-top: -200px; */
+      padding-bottom: 0px;
+
+    }
+  }
+
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;

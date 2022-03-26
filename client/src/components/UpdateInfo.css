@@ -35,45 +35,13 @@ video {
       'Lucida Sans', Arial, sans-serif;
   }
   
-  /* @media screen and (max-width: 1260px) {
-    .update-container {
-      margin-bottom: 300px;
-    }
+    @media screen and (max-width: 450px) {
     .update-container > h1 {
-      font-size: 70px;
-      margin-top: -150px;
+      font-size: 35px;
+      /* margin-top: -200px; */
+      padding-bottom: 30px;
     }
-
-  }
-
-
-  @media screen and (max-width: 960px) {
-    .update-container {
-      margin-bottom: 750px;
     }
-    .update-container > h1 {
-      font-size: 70px;
-      margin-top: -150px;
-    }
-
-    
-  }
-  
-  @media screen and (max-width: 768px) {
-    .update-container {
-      margin-bottom: 850px;
-    }
-    .update-container > h1 {
-      font-size: 50px;
-      margin-top: -100px;
-    }
-  
-    .update-container > p {
-      font-size: 30px;
-    }
-
-  } */
-
 
   /* goofy cards */
   :root {

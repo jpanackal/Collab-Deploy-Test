@@ -132,73 +132,11 @@ video {
     font-weight: bold;
   }
   
-  /* @media screen and (max-width: 1260px) {
-    .idea-container {
-      margin-bottom: 300px;
-    }
+    @media screen and (max-width: 450px) {
     .idea-container > h1 {
-      font-size: 70px;
-      margin-top: 100px;
+      font-size: 45px;
+      /* margin-top: -200px; */
+      padding-bottom: 30px;
     }
-
-  }
-
-
-  @media screen and (max-width: 960px) {
-    .idea-container {
-      margin-bottom: 300px;
     }
-    .idea-container > h1 {
-      font-size: 70px;
-      margin-top: 150px;
-    }
-
-    
-  }
-  
-  @media screen and (max-width: 615px) {
-    .idea-container {
-      height: 170vh;
-      padding-bottom: 100px;
-    }
-
-    .comment-area {
-      padding-bottom: 10vh;
-  }
-
-    .idea-container > h1 {
-      font-size: 50px;
-      margin-top: 100px;
-    }
-
-  }
-
-
-  @media screen and (max-width: 412px) {
-    .idea-container {
-      height: 170vh;
-      padding-bottom: 300px;
-    }
-
-    .comment-area {
-      padding-bottom: 10vh;
-  }
-
-    .idea-container > h1 {
-      font-size: 50px;
-      padding-top: 100px;
-    }
-  
-    .idea-container > p {
-      font-size: 30px;
-    }
-  }
-  @media screen and (max-width: 415px) {
-    .idea-container > h1 {
-      font-size: 50px;
-      padding-top: 600px;
-    }
-  
-
-  } */
 
