@@ -1,0 +1,120 @@
+
+
+.cards-week {
+    border-width: 100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top: #030303;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /* background: #fff; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+    object-fit: contain;
+    /* padding-bottom: 220px; */
+    color: white;
+    text-shadow:
+        0.02em 0 black,
+        0 0.02em black,
+        -0.02em 0 black,
+        0 -0.02em black;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .cards__wrapper-week {
+    text-align: center;
+  }
+  
+  .cards__items-week {
+    padding:150px 0px 100px 0px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cards__items-week li {
+    display:inline-block; 
+    margin: 70px 10px;
+  }
+
+  .main-card{
+    color: white;
+    width: 200px;
+    background-color: #121212;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: box-shadow 2s ease;
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  .up-card{
+    width: 100%;
+    height: 100px;
+    background-color: #191919;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    transition: top 1s ease, background-color 2s ease;
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .down-card{
+    width: 100%;
+    height: 100px;
+    background-color: #191919;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    transition: top 1s ease, background-color 2s ease;
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .main-card:hover .down-card{
+    top: 200px;
+    background-color: rgb(161, 49, 86);
+  }
+  
+  .main-card:hover .up-card{
+    top: -100px;
+    background-color: rgb(49, 120, 161);
+  }
+  
+  .main-card:hover{
+    box-shadow: 0 0 30px 2px black;
+  }

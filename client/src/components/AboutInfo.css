@@ -1,0 +1,321 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  .about-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+    object-fit: contain;
+  }
+  
+  .about-container > h1 {
+    color: #fff;
+    font-size: 6vw;
+    padding-bottom: 0px;
+  }
+  
+  .about-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* @media screen and (max-width: 1260px) {
+    .about-container {
+      margin-bottom: 300px;
+    }
+    .about-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 960px) {
+    .about-container {
+      margin-bottom: 700px;
+    }
+    .about-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .about-container > p {
+      font-size: 30px;
+    }
+
+    .carousel-wrapper {
+      transform: scale(0.2);
+    }
+
+  } */
+
+
+  /* goofy cards */
+  *, *::before, *::after {
+    box-sizing:content-box; /* Too much math below to be concerned with standard CSS Box Model element dimensions calculations. Let's not have to account for padding/margins/borders on anything here. */
+  }
+  
+  body {
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    /* margin-bottom: 100px; */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .carousel_wrapper {
+    padding-top: 10vh;
+    position: relative;
+    width: 290px;
+    margin: 100px auto 0 auto;
+    perspective: 1300px;
+  }
+  
+  .carousel {
+    position: relative;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-412px); /* add reverse transformation from the slides */
+    animation: swirl 40s steps(10000, end) infinite; /* run `swirl` animation (defined at end of CSS) infitely, with animation lasting 40 seconds, and 10,000 steps between the FROM and TO values in the animation for a smooth rotation */
+  }
+  
+  .slide {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 300px;
+    /* background: rgba(0, 0, 0, 0.8); */
+    background-size: 300px;
+    background-position: center;
+    z-index: 200;
+  }
+  
+  .slide img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    /* border: 3px inset rgba(175, 179, 184, 0.75); */
+    /* box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.9); */
+    object-fit:cover;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)); */
+    /* z-index: 2000; */
+    filter: brightness(50%);
+    
+  }
+
+  .image-info {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: left;
+  }
+
+  .image-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    z-index: 100;
+    color: white;
+    font-size: 20px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+  }
+
+  .image-info h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: -170%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.6); */
+  }
+
+  .slide.one .slide.two .slide.three .slide.four{
+    position:relative;
+    display:inline-block;
+  }
+  .slide.one:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  .slide.two:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  .slide.three:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  .slide.four:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  
+  .slide.one {
+    transform: rotateY(0deg) translateZ(412px);
+  }
+  .slide.two {
+    transform: rotateY(90deg) translateZ(412px);
+  }
+  .slide.three {
+    transform: rotateY(180deg) translateZ(412px);
+  }
+  .slide.four {
+    transform: rotateY(270deg) translateZ(412px);
+  }
+  /* .slide.five {
+    transform: rotateY(160deg) translateZ(412px);
+  }
+  .slide.six {
+    transform: rotateY(200deg) translateZ(412px);
+  }
+  .slide.seven {
+    transform: rotateY(240deg) translateZ(412px);
+  }
+  .slide.eight {
+    transform: rotateY(280deg) translateZ(412px);
+  }
+  .slide.nine {
+    transform: rotateY(320deg) translateZ(412px);
+  } */
+  
+  /*
+  CSS3 ANIMATION
+  -------------------
+  Simply rotates the carousel around the Y axis by using rotateY and starting at initial value, -360º, and going to final value 0º, then resetting.
+  */
+  
+  @keyframes swirl {   
+    from {
+      transform: rotateY(360deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  } 
+
+  /* @media screen and (max-width: 1260px) {
+    .about-container {
+      margin-bottom: 300px;
+    }
+    .about-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 960px) {
+    .about-container {
+      margin-bottom: 700px;
+    }
+    .about-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .about-container > p {
+      font-size: 30px;
+    }
+
+    .carousel-wrapper {
+      transform: scale(0.2);
+    }
+
+  } */
+
+  
